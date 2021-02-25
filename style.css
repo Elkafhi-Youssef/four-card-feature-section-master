@@ -1,0 +1,212 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background-color: rgb(244, 248, 252);
+  position: relative;
+  border: 2px solid rgb(244, 248, 252);
+}
+/* =============
+1.first
+============= */
+.first {
+  text-align: center;
+  width: 27%;
+  font-size: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  height: 20%;
+}
+.first_title {
+  margin-top: -7px;
+  font-weight: 200;
+}
+.first .second_title {
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+.first p {
+  font-weight: 200;
+  font-size: 11px;
+}
+/* 
+  .container{ 
+      display: flex;
+      border: 2px solid green;
+      height: 70%;
+      justify-content: space-around;
+      align-items: center;
+  }
+  .child{
+      border: 2px solid orange;
+      margin: 10px;
+      width: 20%;
+      height: 45%;
+  }
+
+  .child2{  
+      border: 2px solid blue;
+      width: 25%;
+      height: 100%;
+  }
+  .child22,.child33{
+      margin: 15px 0px;
+      border: 2px solid hotpink;
+      height: 45%;
+  }
+  .child1{
+      margin-right: -180px;
+  }
+  .child4{
+    margin-left: -180px;
+  } */
+/* 
+  ============
+  2.container
+  =========== */
+.container {
+  margin: auto;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 28%);
+  grid-template-rows: repeat(1, 1fr);
+  width: 90%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+}
+.child {
+  margin: 15px;
+  height: 45%;
+}
+/* ================
+child1 && child4
+================ */
+.child1 {
+  background-color: rgb(250, 252, 253);
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid white;
+  border-top: 7px solid hsl(180, 62%, 55%);
+  box-shadow: 5px 4px 15px gray;
+}
+.child4 {
+  background-color: rgb(250, 252, 253);
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid white;
+  border-top: 7px solid hsl(212, 86%, 64%);
+  box-shadow: 5px 4px 15px gray;
+}
+.child1 h3,
+.child4 h3 {
+  text-indent: 20px;
+}
+.child1 p,
+.child4 p {
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.child1 img,
+.child4 img {
+  width: 55px;
+  height: auto;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+/* 
+===========
+child2 [child22 && child23]
+========== 
+*/
+.child22,
+.child23 {
+  position: relative;
+  background-color: rgb(250, 252, 253);
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow: 5px 4px 15px gray;
+}
+.child22 h3,
+.child23 h3 {
+  text-indent: 20px;
+}
+.child22 p,
+.child23 p {
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.child22 img,
+.child23 img {
+  width: 55px;
+  height: auto;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+.child23 {
+  border-top: 7px solid hsl(34, 97%, 64%);
+  margin-top: 8%;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  right: 0;
+}
+.child2 {
+  position: relative;
+  height: 100%;
+}
+.child22,
+.child23 {
+  height: 46%;
+}
+.child22 {
+  border-top: 7px solid hsl(0, 78%, 62%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+/* 
+===========
+footer
+========== 
+*/
+footer{
+  margin-top: 50px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    display: block;
+  }
+  .first {
+    width: 90%;
+  }
+  footer {
+    position: relative;
+    bottom: -450px;
+  }
+}
